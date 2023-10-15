@@ -19,19 +19,32 @@ void My_First_Task(void * arg)
 
 		if(i == 5)
 		{
+			vTaskSuspend(MySecondTaskHandle);
+			printf("Second Task suspended\n");
+		}
+
+		if(i == 10)
+		{
+			vTaskResume(MySecondTaskHandle);
+			printf("Second Task Resumed\n");
+		}
+
+		if(i == 15)
+		{
 			vTaskDelete(MySecondTaskHandle);
 			printf("Second Task deleted\n");
 		}
+
+		if(i == 20)
+		{
+			printf("MyFirstTaskHandle will suspend itself\n");
+			vTaskSuspend(NULL);
+		}
 	}
 }
-
 ...
 ```
-
-จากโปรแกรมด้านบน เมื่อมีการนับจน i == 5 จะทำให้เงื่อนไขในประโยค if เป็นจริง
-
-คำสั่ง `vTaskDelete(MySecondTaskHandle);` จะลบ `MySecondTaskHandle` ออกจาก list ของ task ที่จะทำงาน
-
+โดยปกติเราจะใส่ชื่อ task handle เป็นอาร์กิวเมนต์สำหรับฟังก์ชัน `vTaskDelete()`, `vTaskSuspend()` และ `vTaskResume()`  แต่การใส่อาร์กิวเมนต์เป็น `NULL` เช่น  `vTaskSuspend(NULL);` จะหมายถึงการกระทำกับ task ผู้ออกคำสั่งเอง 
 
 4. รันและบันทึกผลจากโปรแกรมข้างบน วิเคราะห์ผลที่ได้ว่าเป็นอย่างไร
 

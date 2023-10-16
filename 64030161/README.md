@@ -67,3 +67,84 @@ void app_main(void)
 
 ## Lab 3
 
+แก้ไขโปรแกรมเป้นดังนี้
+```css
+#include <stdio.h>
+#include <stdbool.h>
+#include <unistd.h>
+
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+
+TaskHandle_t MyFirstTaskHandle = NULL;
+// 1. เพิ่ม MySeconeTaskHandle
+TaskHandle_t MySeconeTaskHandle = NULL;
+
+void My_First_Task(void * arg)
+{
+	uint32_t i = 0;
+	while(1)
+	{
+		printf("Hello My First Task %d\n",i);
+		vTaskDelay(1000/portTICK_RATE_MS);
+		i++;
+	}
+}
+
+// 2. เพิ่ม task function
+void My_Second_Task(void * arg)
+{
+	uint32_t i = 0;
+	while(1)
+	{
+		printf("Hello My Second Task %d\n",i);
+		vTaskDelay(1000/portTICK_RATE_MS);
+		i++;
+	}
+}
+
+
+void app_main(void)
+{
+	xTaskCreate(My_First_Task, "Fitst_Task", 4096, NULL, 10, &MyFirstTaskHandle);
+	// 3. สร้างและเรียกใช้ task
+	xTaskCreate(My_Second_Task, "Second_Task", 4096, NULL, 10, &MySeconeTaskHandle);
+}
+```
+โปรแกรมจะเรียก My_First_Task และ My_Second_Task method เพื่อแสดงคำว่า Hello My First Task และ Hello My Second Task ตามด้วยเลขครั้งที่แสดง
+
+<img width="351" alt="Screenshot 2566-10-16 at 13 27 20" src="https://github.com/RachataS/ESP32-FreeRTOS-Intro/assets/115066261/cbc635be-8e8d-48d5-aed7-0233ac427934">
+
+แก้ไข app_main 
+```css
+void app_main(void)
+{
+	xTaskCreate(My_First_Task, "Fitst_Task", 4096, NULL, 10, &MyFirstTaskHandle);
+	// สร้างและเรียกใช้ task ด้วยฟังก์ชัน xTaskCreatePinnedToCore
+	xTaskCreatePinnedToCore(My_Second_Task, "Second_Task", 4096, NULL, 10, &MySeconeTaskHandle, 1);
+}
+```
+โปรแกรมจะเรียก My_First_Task และ My_Second_Task method เพื่อแสดงคำว่า Hello My First Task และ Hello My Second Task ตามด้วยเลขครั้งที่แสดง โดย First และ Second จะแสดงพร้อมกัน
+![image](https://github.com/RachataS/ESP32-FreeRTOS-Intro/assets/115066261/3aebd416-df94-4654-8e96-b2211fbf1994)
+
+## Lab 4
+
+เมื่อแก้ไขโปรแกรมคาดว่าโปรแกรมจะทำงาน 5 ครั้งและเล
+```css
+void My_First_Task(void * arg)
+{
+	uint32_t i = 0;
+	while(1)
+	{
+		printf("Hello My First Task %d\n",i);
+		vTaskDelay(1000/portTICK_RATE_MS);
+		i++;
+
+		if(i == 5)
+		{
+			vTaskDelete(MySecondTaskHandle);
+			printf("Second Task deleted\n");
+		}
+	}
+}
+```

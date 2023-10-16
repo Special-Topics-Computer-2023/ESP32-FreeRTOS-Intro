@@ -159,7 +159,18 @@ void My_First_Task(void * arg)
 
 ## Lab 6
 
-เมื่อกดปุ่ม LED จะติดและแสดงผลว่าปุ่มถูกกด
+เมื่อกดปุ่ม LED จะติดและแสดงผลว่าปุ่มถูกกดโดยจะเรียก method interrupt_task ที่เป็นตัวกำหนดว่า LED จะติดหรือดับ
 
 <img width="351" alt="Screenshot 2566-10-16 at 15 14 14" src="https://github.com/RachataS/ESP32-FreeRTOS-Intro/assets/115066261/7b8aa879-a550-4ea4-811e-b12ef355b919">
 
+## Lab 7
+
+โปรแกรมะแสดงผลข้อความ Received data from queue == จาก Task2 และตามด้วยข้อความ Hello from Demo_Task 1 2 3 ตามลำดับจนครบจากนั้นจะวนลูปไม่รู้จบ
+
+<img width="364" alt="Screenshot 2566-10-16 at 15 32 47" src="https://github.com/RachataS/ESP32-FreeRTOS-Intro/assets/115066261/2679bc6a-5e02-4176-aee6-4cd0801d1f8b">
+
+## Lab 8
+
+โปรแกรมจะรอรับการกดปุ่ม หากกดปุ่มโปรแกรมจะแสดงผลว่าปุ่มถูกกดโดยจะเรียก method Task เพื่อตรวจสอบการกดปุ่ม
+
+<img width="345" alt="Screenshot 2566-10-16 at 15 56 45" src="https://github.com/RachataS/ESP32-FreeRTOS-Intro/assets/115066261/472325d6-318e-4510-bc4a-9c7fec3c0b0e">

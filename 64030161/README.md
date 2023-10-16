@@ -129,7 +129,7 @@ void app_main(void)
 
 ## Lab 4
 
-เมื่อแก้ไขโปรแกรมคาดว่าโปรแกรมจะทำงาน 5 ครั้งและเล
+เมื่อแก้ไขโปรแกรมคาดว่าโปรแกรมจะทำงาน 5 ครั้งจะแสดงข้อความว่า Second Task deleted และแสดงผลเแพาะข้อความที่ของ My_First_Task
 ```css
 void My_First_Task(void * arg)
 {
@@ -148,3 +148,18 @@ void My_First_Task(void * arg)
 	}
 }
 ```
+โปรแกรมจะทำงาน 5 ครั้ง และลบ MySecondTaskHandle จากนั้นจะทำงานต่อเฉพาะ MyFirstTaskHandle
+
+<img width="389" alt="Screenshot 2566-10-16 at 13 58 34" src="https://github.com/RachataS/ESP32-FreeRTOS-Intro/assets/115066261/6db695ff-6314-4a8f-8bbc-fadc920df99e">
+
+## Lab 5 
+โปรแกรมจะทำงาน MyFirstTaskHandle และ MySecondTaskHandle 5 ครั้ง จากนั้นจะหยุดการทำงานของ MySecondTaskHandle และเมื่อ MyFirstTaskHandle ทำงานครบ 10 ครั้ง MySecondTaskHandle จะกลับมาทำงานต่อ เมื่อ MyFirstTaskHandle ทำงานครบ 20 ครั้งจะหยุดทำงานทั้ง MyFirstTaskHandle MySecondTaskHandle
+
+<img width="355" alt="Screenshot 2566-10-16 at 15 06 08" src="https://github.com/RachataS/ESP32-FreeRTOS-Intro/assets/115066261/01a10029-4c46-4662-9891-ecf4c71a1fff">
+
+## Lab 6
+
+เมื่อกดปุ่ม LED จะติดและแสดงผลว่าปุ่มถูกกด
+
+<img width="351" alt="Screenshot 2566-10-16 at 15 14 14" src="https://github.com/RachataS/ESP32-FreeRTOS-Intro/assets/115066261/7b8aa879-a550-4ea4-811e-b12ef355b919">
+

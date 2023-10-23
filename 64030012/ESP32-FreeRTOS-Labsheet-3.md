@@ -63,5 +63,9 @@ void app_main(void)
 ```
 
 4. รันและบันทึกผลจากโปรแกรมข้างบน ได้ผลเหมือนหรือต่างกันอย่างไร
+โปรแกรมจะเรียก My_First_Task และ My_Second_Task method เพื่อแสดงคำว่า Hello My First Task และ Hello My Second Task ตามด้วยเลขครั้งที่แสดง
+โปรแกรมจะเรียก My_First_Task และ My_Second_Task method เพื่อแสดงคำว่า Hello My First Task และ Hello My Second Task ตามด้วยเลขครั้งที่แสดง โดย First และ Second จะแสดงพร้อมกัน
+![Screenshot 2023-10-23 150953](https://github.com/Fixckpx/ESP32-FreeRTOS-Intro/assets/115066186/2af47955-e8c6-4a92-8612-5eaea42187ca)
+
 
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-4.md) 

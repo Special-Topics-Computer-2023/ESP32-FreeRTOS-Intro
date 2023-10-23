@@ -96,4 +96,6 @@ void app_main(void)
 
 ```
 
+โปรแกรมจะเรียก My_First_Task 5 ครั้งและ terminal จะแสดงข้อความ Hello My First Task ตามด้วย เลขเดียวกัน 5 ครั้ง ดังนี้
+![Screenshot 2023-10-23 145806](https://github.com/Fixckpx/ESP32-FreeRTOS-Intro/assets/115066186/018184dc-99b2-4510-b186-3dc1ec50a92d)
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-3.md) 

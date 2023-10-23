@@ -18,6 +18,9 @@
 ![Alt text](./Pictures/Labs/FreeRTOS-Lab-Picture-03.PNG)
 
 3. รันโปรแกรมและอธิบายผลที่ได้
+ผลการรัน โปรแกรมจะเรียก My_First_Task method เพื่อแสดงคำว่า Hello My First Task ตามด้วยเลขครั้งที่แสดง
+![image](https://github.com/Fixckpx/ESP32-FreeRTOS-Intro/assets/115066186/ea77c581-e973-4374-a944-256088cd4602)
+
 
 
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-2.md) 

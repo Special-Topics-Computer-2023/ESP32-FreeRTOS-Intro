@@ -85,5 +85,7 @@ void app_main(void)
 ```
 
 ### 3. รันและบันทึกผลจากโปรแกรมข้างบน วิเคราะห์ผลที่ได้ว่าเป็นอย่างไร
+เมื่อกดปุ่ม LED จะติดและแสดงผลว่าปุ่มถูกกดโดยจะเรียก method interrupt_task ที่เป็นตัวกำหนดว่า LED จะติดหรือดับ
+![Screenshot 2023-10-23 151703](https://github.com/Fixckpx/ESP32-FreeRTOS-Intro/assets/115066186/4adab347-7341-40e9-a384-8a782eab4b5b)
 
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-7.md) 

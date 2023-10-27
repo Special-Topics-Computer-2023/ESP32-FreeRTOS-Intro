@@ -1,28 +1,72 @@
 # ESP32-FreeRTOS-Intro
-##
+## LAB1
 
-![](./Pictures/Slides/FreeRTOS-Picture-01.PNG)
+```css
+#include <stdio.h>
+#include <stdbool.h>
+#include <unistd.h>
 
-![](./Pictures/Slides/FreeRTOS-Picture-02.PNG)
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
 
-![](./Pictures/Slides/FreeRTOS-Picture-03.PNG)
+TaskHandle_t MyFirstTaskHandle = NULL;
 
-![](./Pictures/Slides/FreeRTOS-Picture-04.PNG)
 
-![](./Pictures/Slides/FreeRTOS-Picture-05.PNG)
+void My_First_Task(void * arg)
+{
+	uint32_t i = 0;
+	while(1)
+	{
+		printf("Hello My First Task %d\n",i);
+		vTaskDelay(1000/portTICK_RATE_MS);
+		i++;
+	}
+}
 
-![](./Pictures/Slides/FreeRTOS-Picture-06.PNG)
+void app_main(void)
+{
+	xTaskCreate(My_First_Task, "Fitst_Task", 4096, NULL, 10, &MyFirstTaskHandle);
+}
+```
 
-![](./Pictures/Slides/FreeRTOS-Picture-07.PNG)
+ผลการรันโปรแกรม
 
-![](./Pictures/Slides/FreeRTOS-Picture-08.PNG)
+![image](https://github.com/sucha312/ESP32-FreeRTOS-Intro/assets/115066208/f0f930b6-1c8c-4f1b-b3ae-efc3d2244187)
 
-![](./Pictures/Slides/FreeRTOS-Picture-09.PNG)
+## LAB2
 
-![](./Pictures/Slides/FreeRTOS-Picture-00.PNG)
+```css
+#include <stdio.h>
+#include <stdbool.h>
+#include <unistd.h>
 
-![](./Pictures/Slides/FreeRTOS-Picture-11.PNG)
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
 
-![](./Pictures/Slides/FreeRTOS-Picture-12.PNG)
+TaskHandle_t MyFirstTaskHandle = NULL;
 
-![](./Pictures/Slides/FreeRTOS-Picture-13.PNG)
+void My_First_Task(void * arg)
+{
+	uint32_t i = 0;
+	while(1)
+	{
+		printf("Hello My First Task %d\n",i);
+		vTaskDelay(1000/portTICK_RATE_MS);
+		i++;
+	}
+}
+
+void app_main(void)
+{
+	xTaskCreate(My_First_Task, "Fitst_Task", 4096, NULL, 10, &MyFirstTaskHandle);
+	xTaskCreate(My_First_Task, "Fitst_Task", 4096, NULL, 10, &MyFirstTaskHandle);
+	xTaskCreate(My_First_Task, "Fitst_Task", 4096, NULL, 10, &MyFirstTaskHandle);
+	xTaskCreate(My_First_Task, "Fitst_Task", 4096, NULL, 10, &MyFirstTaskHandle);
+	xTaskCreate(My_First_Task, "Fitst_Task", 4096, NULL, 10, &MyFirstTaskHandle);
+
+}
+```
+
+ผลการรันโปรแกรมคือ จะแสดงเลขตัวเดิมซ้ำ 5 ครั้ง
+
+![image](https://github.com/sucha312/ESP32-FreeRTOS-Intro/assets/115066208/5336d071-4960-4067-a563-5b46368047b7)

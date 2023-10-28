@@ -103,7 +103,7 @@ void app_main(void)
 
 ### 3. รันและบันทึกผลจากโปรแกรมข้างบน วิเคราะห์ผลที่ได้ว่าเป็นอย่างไร
 
-![](./64030131%20Pattanasak/Pictures/Result/Lab8.png)
+![](./Pictures/Result/Lab8.png)
 
 * เมื่อปุ่มถูกกด จะเกิดการเรียก button_isr_handler ซึ่งจะส่งข้อมูล "1" ผ่าน queue และทำให้งาน Task ที่รอรับข้อมูลแสดงข้อความ "Button pressed!".
 

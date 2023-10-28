@@ -100,7 +100,7 @@ void app_main(void)
 
 ### 3. รันและบันทึกผลจากโปรแกรมข้างบน วิเคราะห์ผลที่ได้ว่าเป็นอย่างไร
 
-![](./64030131%20Pattanasak/Pictures/Result/Lab7.png)
+![](./Pictures/Result/Lab7.png)
 
 * Task1:
 จองพื้นที่เพื่อเก็บข้อมูลที่จะส่งผ่าน queue.

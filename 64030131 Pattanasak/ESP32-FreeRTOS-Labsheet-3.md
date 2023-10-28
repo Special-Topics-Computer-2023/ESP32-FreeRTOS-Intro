@@ -51,7 +51,7 @@ void app_main(void)
 
 2. รันและบันทึกผลจากโปรแกรมข้างบน
 
-![](./64030131%20Pattanasak/Pictures/Result/Lab3.png)
+![](./Pictures/Result/Lab3.png)
 
 * ทุก 1 วินาทีจะเรียกใช้งานฟังก์ชั่น My_First_Task และ My_Second_Task ไปพร้อมกัน
 
@@ -68,7 +68,7 @@ void app_main(void)
 
 4. รันและบันทึกผลจากโปรแกรมข้างบน ได้ผลเหมือนหรือต่างกันอย่างไร
 
-![](./64030131%20Pattanasak/Pictures/Result/Lab3_2.png)
+![](./Pictures/Result/Lab3_2.png)
 
 * ผลลัพธ์ที่ได้เหมือนกันทุก 1 วินาทีมีการเรียกใช้งานฟังก์ชั่น My_First_Task และ My_Second_Task เหมือนกัน
 

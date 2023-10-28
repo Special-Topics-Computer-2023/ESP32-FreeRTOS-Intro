@@ -96,7 +96,7 @@ void app_main(void)
 
 ```
 
-![](./64030131%20Pattanasak/Pictures/Result/Lab2.png)
+![](./Pictures/Result/Lab2.png)
 
 * ผลลัพธ์ที่ได้ ทุก 1 วินาทีโปรแกรมจะเรียกใช้ฟังก์ชั่น My_First_Task จำนวน  5 ครั้ง
 

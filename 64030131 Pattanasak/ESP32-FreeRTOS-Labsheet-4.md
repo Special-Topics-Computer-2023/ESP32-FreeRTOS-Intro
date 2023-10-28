@@ -33,7 +33,7 @@ void My_First_Task(void * arg)
 
 4. รันและบันทึกผลจากโปรแกรมข้างบน วิเคราะห์ผลที่ได้ว่าเป็นอย่างไร
 
-![](./64030131%20Pattanasak/Pictures/Result/Lab4.png)
+![](./Pictures/Result/Lab4.png)
 
 * เมื่อเริ่มต้นโปรแกรมมีการเรียกใช้งั้นฟังก์ชั่น My_First_Task และ My_Second_Task และเมื่อโปรแกรมทำงานเพิ่มค่าตัวแปร i ไปทีละ 1 จนถึง 5 ในฟังก์ชั่น My_First_Task จะทำการลบ My_Second_Task ออกจากโปรแกรม
 

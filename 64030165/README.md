@@ -26,6 +26,8 @@ void app_main(void)
 ผลการรัน
 โปรแกรมจะเรียก My_First_Task method เพื่อแสดงคำว่า Hello My First Task ตามด้วยเลขครั้ง
 
+![image](https://github.com/RatchanonBusaracome/ESP32-FreeRTOS-Intro/assets/115066405/fb44e1b0-eb7b-42f1-8803-b5e58d22a743)
+
 ## Lab 2
 
 เมื่อแก้ไขโค้ดโปรแกรมเป็นดังนี้

@@ -50,6 +50,7 @@ void app_main(void)
 ```
 
 2. รันและบันทึกผลจากโปรแกรมข้างบน
+![ภาพ](https://github.com/kammam19/ESP32-FreeRTOS-Intro/assets/112167732/e7e0dd1e-7296-4a3f-a68b-486ead80ad66)
 
 3.  แก้ไข code ในส่วนของการสร้าง task 2 (ตามหมายเหตุหมายเลข 3) เป็นดังนี้
 
@@ -63,5 +64,7 @@ void app_main(void)
 ```
 
 4. รันและบันทึกผลจากโปรแกรมข้างบน ได้ผลเหมือนหรือต่างกันอย่างไร
+![ภาพ](https://github.com/kammam19/ESP32-FreeRTOS-Intro/assets/112167732/6b0ac890-3e66-41c4-baaa-64a8566195c6)
+## พอเปลี่ยนแล้วไม่เหมือนกัน First และ Second จะแสดงพร้อมกัน
 
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-4.md) 

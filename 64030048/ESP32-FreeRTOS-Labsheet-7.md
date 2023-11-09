@@ -99,5 +99,7 @@ void app_main(void)
 ```
 
 ### 3. รันและบันทึกผลจากโปรแกรมข้างบน วิเคราะห์ผลที่ได้ว่าเป็นอย่างไร
+![ภาพ](https://github.com/kammam19/ESP32-FreeRTOS-Intro/assets/112167732/b7e13bc5-75e5-4519-8e7a-43db4f1fb434)
+## กดรัน จะแสดง Received data from queue == จาก Task2 และตามด้วยข้อความ Hello from Demo_Task 1 2 3
 
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-8.md) 

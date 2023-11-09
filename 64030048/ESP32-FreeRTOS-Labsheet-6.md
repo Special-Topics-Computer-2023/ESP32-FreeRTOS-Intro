@@ -85,5 +85,7 @@ void app_main(void)
 ```
 
 ### 3. รันและบันทึกผลจากโปรแกรมข้างบน วิเคราะห์ผลที่ได้ว่าเป็นอย่างไร
+![ภาพ](https://github.com/kammam19/ESP32-FreeRTOS-Intro/assets/112167732/6710caf2-31b7-4a58-919e-d821d0add77f)
+## กดรัน และกดปุ่ม LED ไฟติดติด/ดับ จะขึ้นคำว่า Button pressed!
 
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-7.md) 

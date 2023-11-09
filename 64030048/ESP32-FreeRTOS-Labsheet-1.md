@@ -18,6 +18,7 @@
 ![Alt text](./Pictures/Labs/FreeRTOS-Lab-Picture-03.PNG)
 
 3. รันโปรแกรมและอธิบายผลที่ได้
+   ![ภาพ](https://github.com/kammam19/ESP32-FreeRTOS-Intro/assets/112167732/a46e3c9e-a7cd-4968-b2d3-e35cf6a93c87)
 
 
 

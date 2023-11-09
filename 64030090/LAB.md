@@ -136,17 +136,25 @@ void My_First_Task(void * arg)
 
 คำสั่ง `vTaskDelete(MySecondTaskHandle);` จะลบ `MySecondTaskHandle` ออกจาก list ของ task ที่จะทำงาน
 เมื่อโปรแกรมทำงานครบ 5 ครั้ง จะทำการลบ MySecondTaskHandle
-![image](https://github.com/JASDA0000/ESP32-FreeRTOS-Intro/assets/103983336/1fb995c6-1c20-463c-aa2c-69a0a76e38fb)
+
+![image](https://github.com/Nanapon2002/ESP32-FreeRTOS-Intro/assets/115066356/9371949b-1663-4a98-9a63-c84b3a63e69b)
+
 ## LAB5
 โปรแกรมจะเริ่มทำงาน เมื่อเข้าครั้งที่ 5 จะทำการเรียกใช้ vTaskSuspend() ใช้หยุดทำงาน MySecondTask เมื่อเข้ารอบที่ 10 จะทำการเรียกใช้ vTaskResume() ทำให้ MySecondTask กลับมาทำงาน 
 เมื่อเข้ารอบที่ 15 จะทำการเรียกใช้ vTaskDelete() ทำให้ MySecondTask โดนลบ เมื่อเข้ารอบที่ 20 จะหยุดการทำงานทั้ง MyfirstTask และ MySecondTask
-![image](https://github.com/JASDA0000/ESP32-FreeRTOS-Intro/assets/103983336/94db75de-3ebf-414b-bc93-ecd15714c8ed)
+
+![image](https://github.com/Nanapon2002/ESP32-FreeRTOS-Intro/assets/115066356/50ad6a2a-1400-4da4-84ba-6cdf221f286f)
+
 ## LAB6
 เมื่อกดปุ่ม LED จะติดและแสดงผลว่าปุ่มถูกกดโดยจะเรียก method interrupt_task ที่เป็นตัวกำหนดว่า LED จะติดหรือดับ
-![image](https://github.com/JASDA0000/ESP32-FreeRTOS-Intro/assets/103983336/6ffe2ea8-d084-4a0e-8706-2c4e8729c484)
-## LAB7
+![image](https://github.com/Nanapon2002/ESP32-FreeRTOS-Intro/assets/115066356/a48315a7-001e-48d3-895b-90adf6c1ef22)
+
 โปรแกรมะแสดงผลข้อความ Received data from queue == จาก Task2 และตามด้วยข้อความ Hello from Demo_Task 1 2 3 ตามลำดับจนครบจากนั้นจะวนลูปไม่รู้จบ
-![image](https://github.com/JASDA0000/ESP32-FreeRTOS-Intro/assets/103983336/c75c0b98-fa9e-4511-b0ef-f7a8a74d2505)
+
+![image](https://github.com/Nanapon2002/ESP32-FreeRTOS-Intro/assets/115066356/b1fbd7c4-fa26-4e4a-97cb-efce8e60473e)
+
 ## LAB8
 โปรแกรมจะรอรับการกดปุ่ม หากกดปุ่มโปรแกรมจะแสดงผลว่าปุ่มถูกกดโดยจะเรียก method Task เพื่อตรวจสอบการกดปุ่ม
-![image](https://github.com/JASDA0000/ESP32-FreeRTOS-Intro/assets/103983336/bc9f7acd-30e4-43b9-b3a9-86c5468a6647)
+
+![image](https://github.com/Nanapon2002/ESP32-FreeRTOS-Intro/assets/115066356/87c5d8c2-fef3-4bba-8969-c70d62e49bbb)
+

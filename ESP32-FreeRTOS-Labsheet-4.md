@@ -24,7 +24,9 @@ void My_First_Task(void * arg)
 }
 
 ...
+
 ```
+![image](https://github.com/Prangpanwat/ESP32-FreeRTOS-Intro/assets/116150897/37c3d17f-4c69-4eb2-94f3-e207acf2cd1d)
 
 จากโปรแกรมด้านบน เมื่อมีการนับจน i == 5 จะทำให้เงื่อนไขในประโยค if เป็นจริง
 

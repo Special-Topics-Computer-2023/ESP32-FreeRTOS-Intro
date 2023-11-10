@@ -95,5 +95,28 @@ void app_main(void)
 }
 
 ```
+Lab1
+#include <stdio.h>
+#include <stdbool.h>
+#include <unistd.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+TaskHandle_t MyFirstTaskHandle = NULL;
+void My_First_Task(void *arg)
+{
+    uint32_t i = 0;
+    while (1)
+    {
+        printf("Hello My First Task %d\n", i);
+        vTaskDelay(1000 / portTICK_RATE_MS);
+        i++;
+    }
+}
+void app_main(void)
+{
+    xTaskCreate(My_First_Task, "Fitst_Task", 4096, NULL, 10, &MyFirstTaskHandle);
+}
+![image](https://github.com/Prangpanwat/ESP32-FreeRTOS-Intro/assets/116150897/f4583399-4e49-4120-8790-4379bc5271a7)
+
 
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-3.md) 

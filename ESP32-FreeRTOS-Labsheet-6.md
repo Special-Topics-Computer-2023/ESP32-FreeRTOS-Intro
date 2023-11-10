@@ -10,6 +10,8 @@
 1.1 LED pin  =  27
 
 1.2 Push button pin = 33 
+![image](https://github.com/Prangpanwat/ESP32-FreeRTOS-Intro/assets/116150897/c01d16c2-2e2b-4b64-8633-1b94757139d6)
+
 
 ### 2. Software code
 

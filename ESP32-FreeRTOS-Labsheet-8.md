@@ -100,6 +100,7 @@ void app_main(void)
 }
 
 ```
+![image](https://github.com/Prangpanwat/ESP32-FreeRTOS-Intro/assets/116150897/2d07004e-6910-4ba0-9f4a-d486a9906803)
 
 ### 3. รันและบันทึกผลจากโปรแกรมข้างบน วิเคราะห์ผลที่ได้ว่าเป็นอย่างไร
 

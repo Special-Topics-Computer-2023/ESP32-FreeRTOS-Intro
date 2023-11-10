@@ -196,3 +196,10 @@ Hello My First Task 18
 Hello My First Task 19
 MyFirstTaskHandle will suspend itself
 ```
+
+## LAB6
+
+เมื่อกดปุ่ม LED จะติดและแสดงผลว่าปุ่มถูกกดโดยจะเรียก method interrupt_task ที่เป็นตัวกำหนดว่า LED จะติดหรือดับ
+
+![image](https://github.com/sucha312/ESP32-FreeRTOS-Intro/assets/115066208/363c896f-fa50-412a-83a0-54d34d69f61c)
+

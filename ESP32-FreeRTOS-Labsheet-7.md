@@ -61,6 +61,7 @@ void Task1(void *arg)
     }
 }
 ```
+![image](https://github.com/Prangpanwat/ESP32-FreeRTOS-Intro/assets/116150897/e8026135-8137-4c05-a687-5a1462f4043d)
 
 2.4 Code สำหรับ task #2
 

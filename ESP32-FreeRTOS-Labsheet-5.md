@@ -5,7 +5,8 @@
 
 1. แก่ไข Code จากโปรแกรมที่แล้ว โดยการเพิ่ม task เข้าไปอีก 1 task (ดู comment ใน code)
 
-```c
+```c  ![image](https://github.com/Prangpanwat/ESP32-FreeRTOS-Intro/assets/116150897/fbeda464-0b72-453d-8abf-55ad07af34b1)
+
 ...
 
 void My_First_Task(void * arg)

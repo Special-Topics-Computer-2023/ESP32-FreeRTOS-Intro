@@ -203,3 +203,14 @@ MyFirstTaskHandle will suspend itself
 
 ![image](https://github.com/sucha312/ESP32-FreeRTOS-Intro/assets/115066208/363c896f-fa50-412a-83a0-54d34d69f61c)
 
+## LAB7
+
+โปรแกรมะแสดงผลข้อความ Received data from queue == จาก Task2 และตามด้วยข้อความ Hello from Demo_Task 1 2 3 ตามลำดับจนครบจากนั้นจะวนลูปไม่รู้จบ
+
+![image](https://github.com/sucha312/ESP32-FreeRTOS-Intro/assets/115066208/4a04cf69-e411-4475-a178-62c5b9dd9a06)
+
+## LAB8
+
+โปรแกรมจะรอรับการกดปุ่ม หากกดปุ่มโปรแกรมจะแสดงผลว่าปุ่มถูกกดโดยจะเรียก method Task เพื่อตรวจสอบการกดปุ่ม
+
+![image](https://github.com/sucha312/ESP32-FreeRTOS-Intro/assets/115066208/b6e90e9c-5344-452b-bf0a-23e077995297)

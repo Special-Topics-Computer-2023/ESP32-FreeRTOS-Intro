@@ -95,6 +95,7 @@ void app_main(void)
 }
 
 ```
+![image](https://github.com/Prangpanwat/ESP32-FreeRTOS-Intro/assets/116150897/dd69f4ec-087c-4f6d-8225-2231983bd9fd)
 
 
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-3.md) 

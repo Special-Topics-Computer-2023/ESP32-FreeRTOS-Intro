@@ -128,3 +128,31 @@ void app_main(void)
 
 ## LAB4
 
+เมื่อแก้ไขโปรแกรมคาดว่าโปรแกรมจะทำงาน 5 ครั้งจะแสดงข้อความว่า Second Task deleted และแสดงผลเแพาะข้อความที่ของ My_First_Task
+
+
+```css
+void My_First_Task(void * arg)
+{
+	uint32_t i = 0;
+	while(1)
+	{
+		printf("Hello My First Task %d\n",i);
+		vTaskDelay(1000/portTICK_RATE_MS);
+		i++;
+
+		if(i == 5)
+		{
+			vTaskDelete(MySecondTaskHandle);
+			printf("Second Task deleted\n");
+		}
+	}
+}
+```
+
+โปรแกรมจะทำงาน 5 ครั้ง และลบ MySecondTaskHandle จากนั้นจะทำงานต่อเฉพาะ MyFirstTaskHandle
+
+![image](https://github.com/sucha312/ESP32-FreeRTOS-Intro/assets/115066208/c84fc868-4515-4c76-826d-f9d095767fa9)
+
+
+## LAB5

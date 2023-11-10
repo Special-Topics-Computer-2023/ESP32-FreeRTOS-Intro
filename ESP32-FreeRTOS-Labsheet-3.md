@@ -50,6 +50,7 @@ void app_main(void)
 ```
 
 2. รันและบันทึกผลจากโปรแกรมข้างบน
+![image](https://github.com/Prangpanwat/ESP32-FreeRTOS-Intro/assets/116150897/ccae3036-ce44-4ef8-92cf-a80f28d38077)
 
 3.  แก้ไข code ในส่วนของการสร้าง task 2 (ตามหมายเหตุหมายเลข 3) เป็นดังนี้
 
@@ -61,6 +62,9 @@ void app_main(void)
 	xTaskCreatePinnedToCore(My_Second_Task, "Second_Task", 4096, NULL, 10, &MySeconeTaskHandle, 1);
 }
 ```
+ผลการรัน โปรแกรมจะเรียก My_First_Task และ My_Second_Task method เพื่อแสดงคำว่า Hello My First Task และ Hello My Second Task ตามด้วยเลข
+
+![image](https://github.com/Prangpanwat/ESP32-FreeRTOS-Intro/assets/116150897/1c5cfe87-f692-4393-a23d-f1bb80d2c7d5)
 
 4. รันและบันทึกผลจากโปรแกรมข้างบน ได้ผลเหมือนหรือต่างกันอย่างไร
 

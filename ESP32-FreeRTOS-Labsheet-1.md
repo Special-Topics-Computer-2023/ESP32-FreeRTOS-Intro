@@ -18,6 +18,6 @@
 ![Alt text](./Pictures/Labs/FreeRTOS-Lab-Picture-03.PNG)
 
 3. รันโปรแกรมและอธิบายผลที่ได้
-
+- ผลลัพธ์ที่ได้เมื่อทุก 1 วินาทีโปรแกรมจะบวกค่าตัวแปร i ทีละ 1 และจะแสดงข้อความ Hello My First Task ตามด้วยค่าของตัวแปร i
 
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-2.md) 

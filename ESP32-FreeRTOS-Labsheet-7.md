@@ -100,4 +100,8 @@ void app_main(void)
 
 ### 3. รันและบันทึกผลจากโปรแกรมข้างบน วิเคราะห์ผลที่ได้ว่าเป็นอย่างไร
 
+โปรแกรมะแสดงผลข้อความ Received data from queue == จาก Task2 และตามด้วยข้อความ Hello from Demo_Task 1 2 3 ตามลำดับจนครบจากนั้นจะวนลูปไม่รู้จบ
+
+![image](https://github.com/Sorrawit087/ESP32-FreeRTOS-Intro/assets/110808862/21d3d917-61a4-4ac8-ba63-34606c397890)
+
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-8.md) 

@@ -96,4 +96,9 @@ void app_main(void)
 
 ```
 
+จะแสดงเลขตัวเดิมซ้ำ 5 ครั้ง
+
+![image](https://github.com/Sorrawit087/ESP32-FreeRTOS-Intro/assets/110808862/c2a7c4fd-ca94-44c8-a13c-a79b7408a3a2)
+
+
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-3.md) 

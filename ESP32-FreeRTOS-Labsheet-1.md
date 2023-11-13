@@ -18,6 +18,6 @@
 ![Alt text](./Pictures/Labs/FreeRTOS-Lab-Picture-03.PNG)
 
 3. รันโปรแกรมและอธิบายผลที่ได้
-
+แสดงข้อความ Hello My First Task หน่วงเวลา 1 วินาทีและเพิ่มค่า i ทีละ 1
 
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-2.md) 

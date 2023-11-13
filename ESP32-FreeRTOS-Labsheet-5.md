@@ -48,4 +48,43 @@ void My_First_Task(void * arg)
 
 4. รันและบันทึกผลจากโปรแกรมข้างบน วิเคราะห์ผลที่ได้ว่าเป็นอย่างไร
 
+โปรแกรมจะทำงาน MyFirstTaskHandle และ MySecondTaskHandle 5 ครั้ง จากนั้นจะหยุดการทำงานของ MySecondTaskHandle และเมื่อ MyFirstTaskHandle ทำงานครบ 10 ครั้ง MySecondTaskHandle จะกลับมาทำงานต่อ เมื่อ MyFirstTaskHandle ทำงานครบ 20 ครั้งจะหยุดทำงานทั้ง MyFirstTaskHandle MySecondTaskHandle
+
+```css
+Hello My First Task 0
+I (332) main_task: Returned from app_main()
+Hello My Second Task 0
+Hello My First Task 1
+Hello My Second Task 1
+Hello My First Task 2
+Hello My Second Task 2
+Hello My First Task 3
+Hello My Second Task 3
+Hello My First Task 4
+Hello My Second Task 4
+Second Task suspended
+Hello My First Task 5
+Hello My First Task 6
+Hello My First Task 7
+Hello My First Task 8
+Hello My First Task 9
+Second Task Resumed
+Hello My First Task 10
+Hello My Second Task 5
+Hello My First Task 11
+Hello My Second Task 6
+Hello My First Task 12
+Hello My Second Task 7
+Hello My First Task 13
+Hello My Second Task 8
+Hello My First Task 14
+Hello My Second Task 9
+Second Task deleted
+Hello My First Task 15
+Hello My First Task 16
+Hello My First Task 17
+Hello My First Task 18
+Hello My First Task 19
+MyFirstTaskHandle will suspend itself
+```
 ## [>> ต่อไป >>](./ESP32-FreeRTOS-Labsheet-6.md) 
